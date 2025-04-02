@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharath Chandra - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: linear-gradient(to right, #0f2027, #203a43, #2c5364); color: #f4f4f4; transition: background 0.5s; }
+        header { background: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; text-align: center; position: fixed; width: 100%; top: 0; left: 0; z-index: 1000; font-size: 1.2em; }
+        .container { max-width: 1200px; margin: 140px auto 20px; padding: 20px; text-align: center; }
+        h2 { border-bottom: 3px solid #00c6ff; padding-bottom: 10px; color: #00c6ff; }
+        .projects, .skills { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .card { background: rgba(255, 255, 255, 0.1); padding: 20px; width: 320px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: transform 0.3s, box-shadow 0.3s; text-align: center; border-radius: 15px; color: white; }
+        .card:hover { transform: scale(1.08); box-shadow: 0 8px 16px rgba(0,0,0,0.5); }
+        .card img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; }
+        footer { text-align: center; padding: 15px; background: rgba(0, 0, 0, 0.9); color: white; margin-top: 20px; font-size: 1.1em; }
+        .sidebar { position: fixed; top: 80px; left: 20px; background: rgba(0, 0, 0, 0.8); padding: 15px; border-radius: 10px; }
+        .sidebar a { display: block; color: #fff; text-decoration: none; padding: 10px; transition: background 0.3s; }
+        .sidebar a:hover { background: #00c6ff; }
+        .theme-toggle { position: fixed; top: 20px; right: 20px; cursor: pointer; color: white; font-size: 1.5em; }
+        a { color: #00c6ff; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+        @media (max-width: 768px) { .container { padding: 10px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sharath Chandra</h1>
+        <p>Data Scientist | Machine Learning Engineer</p>
+        <i class="fas fa-moon theme-toggle" onclick="toggleTheme()"></i>
+    </header>
+    <nav class="sidebar">
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a data scientist with a strong foundation in machine learning, AI, and big data. With a deep passion for problem-solving, I specialize in predictive modeling and advanced analytics to drive impactful insights.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills & Expertise</h2>
+            <div class="skills">
+                <div class="card"><h3>Machine Learning</h3></div>
+                <div class="card"><h3>Deep Learning</h3></div>
+                <div class="card"><h3>Python</h3></div>
+                <div class="card"><h3>SQL</h3></div>
+                <div class="card"><h3>Data Visualization</h3></div>
+                <div class="card"><h3>NLP</h3></div>
+                <div class="card"><h3>Computer Vision</h3></div>
+                <div class="card"><h3>Big Data (Spark, Hadoop)</h3></div>
+                <div class="card"><h3>Feature Engineering</h3></div>
+                <div class="card"><h3>Model Deployment</h3></div>
+                <div class="card"><h3>Cloud Computing (AWS, GCP)</h3></div>
+                <div class="card"><h3>ETL & Data Pipelines</h3></div>
+                <div class="card"><h3>Power BI & Tableau</h3></div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="card">
+                    <img src="fraud_detection.jpg" alt="Fraud Detection">
+                    <h3>Fraud Detection</h3>
+                    <p>Developed an ML model to detect fraudulent transactions with high accuracy.</p>
+                </div>
+                <div class="card">
+                    <img src="gemstone_price.jpg" alt="Gemstone Prediction">
+                    <h3>Gemstone Price Prediction</h3>
+                    <p>Created a predictive model for gemstone pricing using regression techniques.</p>
+                </div>
+                <div class="card">
+                    <img src="titanic_analysis.jpg" alt="Titanic Analysis">
+                    <h3>Titanic Disaster Analysis</h3>
+                    <p>Built a classification model predicting survival rates from Titanic dataset.</p>
+                </div>
+                <div class="card">
+                    <img src="sales_forecasting.jpg" alt="Sales Forecasting">
+                    <h3>Sales Forecasting – Time Series Analysis</h3>
+                    <p>Built time series models for a pharma retailer to forecast next-month sales and prevent stockouts.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:sharathchandra0353@gmail.com">sharathchandra0353@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/sharath-chandra-18a722205/" target="_blank">Sharath Chandra</a></p>
+            <p>Kaggle: <a href="https://www.kaggle.com/sharathchandraguptha" target="_blank">Sharath Chandra Kaggle</a></p>
+            <p>GitHub: <a href="https://github.com/SharathGuptha" target="_blank">Sharath Chandra GitHub</a></p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Sharath Chandra. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
